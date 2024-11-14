@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>Inserció d'Imatges</title>
+    <style>
+      html,
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+      }
+      header {
+        background-color: #333;
+        color: white;
+        padding: 1rem;
+        text-align: center;
+      }
+      main {
+        padding: 1rem;
+      }
+      img {
+        margin: 1rem;
+        border-radius: 5px;
+      }
+      .divImg{
+        background-image: url('./img/rust.png');
+        width: 50px;
+        height: 50px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        margin: 1rem;
+        border-radius: 5px;
+      }
+      .images-container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Inserció d'Imatges</h1>
+    </header>
+    <main>
+      <section>
+        <article>
+          <h2>Imatges</h2>
+          <p>
+            Les imatges són un element molt important en el disseny web.
+            Aquestes poden ser utilitzades per a mostrar informació, per a
+            decorar o per a millorar l'experiència de l'usuari.
+          </p>
+          <div class="images-container">
+            <img
+            src="./img/java.png"
+            alt="Imatge de java"
+            width="50px"
+            height="auto"
+            title="Imatge de Java"
+            />
+            <img
+            src="data:image/png;base64,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"
+            alt="Imatge de js"
+            width="50px"
+            height="auto"
+            title="Imatge de JavaScript"
+            />
+            <div class="divImg" />
+          </div>
+        </article>
+      </section>
+    </main>
+  </body>
+</html>
